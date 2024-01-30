@@ -35,11 +35,6 @@ pipeline {
         sh "mvn test"
       }
     }
-    stage("Test Application") {
-      steps {
-        sh "mvn test"
-      }
-    }
     stage("Build and Push Docker") {
       steps {
         script {
